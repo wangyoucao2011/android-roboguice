@@ -1,5 +1,5 @@
 #Instance Bindings
-我们在前面例子 [Android RoboGuice 使用指南(4):Linked Bindings ](http://www.imobilebbs.com/wordpress/archives/2517?p=2503) 时为简单起见，定义MyRectangle和MySquare时为它们定义了一个不带参数的构造函数，如MyRectangle的如下：
+我们在前面例子 [Android RoboGuice 使用指南(4):Linked Bindings ](http://www.imobilebbs.com/wordpress/archives/2517?p=2503) 时为简单起见，定义 MyRectangle 和MySquare 时为它们定义了一个不带参数的构造函数，如 MyRectangle 的如下：
 
 ```
 public class MyRectangle extends Rectangle{
