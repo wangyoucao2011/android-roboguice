@@ -20,7 +20,7 @@
 
 使用 roboguice2 的步骤：
 
-Roboguice2 中不在含有 RoboApplication 类，因此无需也不可能派生RoboApplication 的子类。这里重复一下 HelloWorld 的Layout 和类说明
+Roboguice2 中不在含有 RoboApplication 类，因此无需也不可能派生RoboApplication 的子类。这里重复一下 HelloWorld 的 Layout 和类说明
 
 1. 在这个简单的例子中，它使用的 Layout 定义如下：
 
@@ -67,9 +67,9 @@ public class GuiceDemo extends RoboActivity  {
 
 ```
 
-- 使用RoboGuice 的Activity需要从RoboActivity派生(RoboActivity为Activity的子类).
-- 使用@Inject标注greetingServce依赖于IGreetingService服务
-- 使用@InjectView表示helloLabel 依赖于R.id.hello （XML）
+- 使用 RoboGuice 的 Activity 需要从 RoboActivity 派生(RoboActivity 为 Activity 的子类).
+- 使用 @Inject 标注 greetingServce 依赖于 IGreetingService 服务
+- 使用 @InjectView 表示 helloLabel 依赖于 R.id.hello （XML）
 
 代码中没有创建 greetingServce 对象的代码（如 new xxx()) 和为helloLabel 赋值的代码。这些值都可以 Roboguice 自动创建和赋值注入（Inject) 到变量中。
 

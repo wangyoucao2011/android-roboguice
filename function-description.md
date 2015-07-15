@@ -1,6 +1,6 @@
 #RoboGuice 功能描述
 
-前面在 [Android RoboGuice 使用指南(1):概述](http://www.imobilebbs.com/wordpress/?p=2480) 对应 Roboguice 做了简要的介绍，之后介绍了 Google Guice 的基本用法，Roboguice 是基本 Android 和 Google Guice 开发的适用于 Android 平台的Dependency Injection 开发包，下图为使用 Roboguice 开发应用的基本框图：
+前面在 [Android RoboGuice 使用指南(1):概述](http://www.imobilebbs.com/wordpress/?p=2480) 对应 Roboguice 做了简要的介绍，之后介绍了 Google Guice 的基本用法，Roboguice 是基本 Android 和 Google Guice 开发的适用于 Android 平台的 Dependency Injection 开发包，下图为使用 Roboguice 开发应用的基本框图：
 
 ![](images/13.png)
 

@@ -1,4 +1,4 @@
-#Inject 自定义View
+#Inject 自定义 View
 
 前面介绍了 Android RoboGuice2 的 [HelloWorld 示例](http://www.imobilebbs.com/wordpress/?p=3111)，并介绍了从RoboGuice 1.1 升级到 RoboGuice2.0 的主要 [注意事项](http://www.imobilebbs.com/wordpress/?p=3100)。其它的基本概念和 RoboGuice1.1 基本一样，可以参见
 
@@ -11,14 +11,14 @@
 - Android RoboGuice 使用指南(9):Untargetted Bindings
 - Android RoboGuice 使用指南(10)：Just-in-time Bindings
 - Android RoboGuice 使用指南(11)：Scopes
-- Android RoboGuice 使用指南(12)：如何绑定generic类型
+- Android RoboGuice 使用指南(12)：如何绑定 generic 类型
 - Android RoboGuice 使用指南(13):RoboGuice 功能描述
 - Android RoboGuice 使用指南(14):Inject View
 - Android RoboGuice 使用指南(15):Inject Context
 - Android RoboGuice 使用指南(16):Standard Injection
 - Android RoboGuice 使用指南(17):Inject Extra
 - Android RoboGuice 使用指南(18):Inject Resources
-- Android RoboGuice 使用指南(19):发送接收Events
+- Android RoboGuice 使用指南(19):发送接收 Events
 
 本例介绍如何 Inject 自定义的 View，Inject 自定义的 View 和Android 自带的 View（如 TextView，Button）方法一样。
 

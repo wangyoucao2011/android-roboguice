@@ -9,11 +9,11 @@ Guice 在模块为 AbstractMoudule 的子类，而 RoboGuice 在模块为Abstrac
 
 打个比方，如果你熟悉 make file 或是其它 Build 系统（如 wix) 。你使用 makefile 定义好需编译的对象所依赖的源码文件，这些源码由可能依赖其它库或头文件等。makefile 定义的这些依赖关系对应到 Roboguice 中为模块中定义的 bindings 。
 
-使用 make 编译某个目标程序 (Target), make 会查看 makefile 中的依赖关系，依次先编译被依赖的对象直到最终编译 Target。对应到Roboguide（Guice)为Injector 创建某个对象，它会根据定义的Bindings 首先创建那些被依赖的对象，直到创建所需对象。
+使用 make 编译某个目标程序 (Target), make 会查看 makefile 中的依赖关系，依次先编译被依赖的对象直到最终编译 Target。对应到Roboguide（Guice)为 Injector 创建某个对象，它会根据定义的Bindings 首先创建那些被依赖的对象，直到创建所需对象。
 
 在 HelloWorld 例子中，我们没有看到 Injector 的直接使用，这是因为 RoboGuice 替我们调用了 Injector 来创建 IGreetingService 对象。
 
-如果在某些情况下，如果你想直接使用 Injector ,可以使用RoboActivity 的getInjector().
+如果在某些情况下，如果你想直接使用 Injector ,可以使用RoboActivity 的 getInjector().
 
 比如修改 GuiceDemo，去掉 @Inject IGreetingService greetingServce 而使用 Injector 的 getInstance 来创建IGreetingService 实例。
 

@@ -2,8 +2,8 @@
 
 缺省情况下，Guice 每次都创建类的一个新的实例对象给需要该类实例的地方。可以使用 Scopes 来修改这个缺省行为，Scope 允许在一定范围内重用类实例。Roboguice 中常用的有两种：
 
-+ @Singleton 整个Application生命周期中使用同一实例对象
-+ @ContextScoped 同一个Context（如Activity）中共享某一实例对象。
++ @Singleton 整个 Application 生命周期中使用同一实例对象
++ @ContextScoped 同一个Context（如 Activity）中共享某一实例对象。
 
 使用 Scope 的方法为使用相应的标记，如：
 

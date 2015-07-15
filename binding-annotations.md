@@ -37,9 +37,9 @@ public @interface Square {
 
 简单的说明如下：
 
-+ @BindingAnnotation 通知这是一个Binding Annotation，如果将多个个标注应用到同一个元素时，Guice会报错。
++ @BindingAnnotation 通知这是一个 Binding Annotation，如果将多个个标注应用到同一个元素时，Guice 会报错。
 + @Target({FIELD, PARAMETER, METHOD})  表示这个标注可以应用到类成员变量，函数的参数或时方法。
-+ @Retention(RUNTIME) 表示这个标注在程序运行时可以使用Reflection读取。
++ @Retention(RUNTIME) 表示这个标注在程序运行时可以使用Reflection 读取。
 
 创建一个 BindingAnnotationsDemo 用来绘制两个图形：
 

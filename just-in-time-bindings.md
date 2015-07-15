@@ -6,7 +6,7 @@ Injector 通过检查 bindings 定义来创建某个类型的实例对象。定�
 
 Injector 通过使用类的 injectable constructor 来创建该类的实例对象。injectable constructor 可以为该类定义的 public 不带参数的构造函数或是带有 @Injector 标记的构造函数。
 
-比如 [Android RoboGuice 使用指南(4):Linked Bindings](http://www.imobilebbs.com/wordpress/archives/2537?p=2503) 中MyRectangle的无参数构造函数：
+比如 [Android RoboGuice 使用指南(4):Linked Bindings](http://www.imobilebbs.com/wordpress/archives/2537?p=2503) 中MyRectangle 的无参数构造函数：
 
 ```
 public class MyRectangle extends Rectangle{
@@ -18,7 +18,7 @@ public class MyRectangle extends Rectangle{
 
 ```
 
-和 [Android RoboGuice 使用指南(6):Instance Bindings](http://www.imobilebbs.com/wordpress/archives/2537?p=2517) 定义的含@Injector 标记的构造函数：
+和 [Android RoboGuice 使用指南(6):Instance Bindings](http://www.imobilebbs.com/wordpress/archives/2537?p=2517) 定义的含 @Injector 标记的构造函数：
 
 ```
 public class MySquare extends MyRectangle {
@@ -31,7 +31,7 @@ public class MySquare extends MyRectangle {
 
 ##@ImplementedBy
 
-该标记通知Injector某个类型的缺省实现，其功能和 [Linked Bindings](http://www.imobilebbs.com/wordpress/?p=2503) 类似，例如：
+该标记通知 Injector 某个类型的缺省实现，其功能和 [Linked Bindings](http://www.imobilebbs.com/wordpress/?p=2503) 类似，例如：
 
 ```
 @ImplementedBy(PayPalCreditCardProcessor.class)

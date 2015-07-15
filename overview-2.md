@@ -3,7 +3,7 @@
 RoboGuice 最近推出了2.0版本。和1.1相比具有：
 
 - 提高了稳定性
-- 支持Fragment
+- 支持 Fragment
 - 更简洁易用
 
 但由于 RoboGuice2 不完全向下兼容 RoboGuice1.1，因此原来使用RobuGuice1.1 开发的项目需要对代码做些修改才可以使用RoboGuice2.0.
@@ -48,7 +48,7 @@ ublic class GreetingModule extends AbstractModule {
 以上是主要从 RoboGuice1.1 升级到2.0的主要步骤。在学习2.0之前，可以参考一下1.1的介绍，基本概念还是一样的。
 
 - [Android RoboGuice 使用指南(1):概述](http://www.imobilebbs.com/wordpress/?p=2480)
-- [Android RoboGuice 使用指南(2):第一个例子Hello World](http://www.imobilebbs.com/wordpress/?p=2486)
+- [Android RoboGuice 使用指南(2):第一个例子 Hello World](http://www.imobilebbs.com/wordpress/?p=2486)
 - [Android RoboGuice 使用指南(3):Bindings 概述](http://www.imobilebbs.com/wordpress/?p=2497)
 - [Android RoboGuice 使用指南(4):Linked Bindings](http://www.imobilebbs.com/wordpress/?p=2503)
 - [Android RoboGuice 使用指南(5):Binding Annotations](http://www.imobilebbs.com/wordpress/?p=2510)
@@ -58,12 +58,12 @@ ublic class GreetingModule extends AbstractModule {
 - [Android RoboGuice 使用指南(9):Untargetted Bindings](http://www.imobilebbs.com/wordpress/?p=2534)
 - [Android RoboGuice 使用指南(10)：Just-in-time Bindings](http://www.imobilebbs.com/wordpress/?p=2537)
 - [Android RoboGuice 使用指南(11)：Scopes](http://www.imobilebbs.com/wordpress/?p=2540)
-- [Android RoboGuice 使用指南(12)：如何绑定generic类型](http://www.imobilebbs.com/wordpress/?p=2543)
+- [Android RoboGuice 使用指南(12)：如何绑定 generic 类型](http://www.imobilebbs.com/wordpress/?p=2543)
 - [Android RoboGuice 使用指南(13):RoboGuice 功能描述](http://www.imobilebbs.com/wordpress/?p=2545)
 - [Android RoboGuice 使用指南(14):Inject View](http://www.imobilebbs.com/wordpress/?p=2549)
 - [Android RoboGuice 使用指南(15):Inject Context](http://www.imobilebbs.com/wordpress/?p=2558)
 - [Android RoboGuice 使用指南(16):Standard Injection](http://www.imobilebbs.com/wordpress/?p=2563)
 - [Android RoboGuice 使用指南(17):Inject Extra](http://www.imobilebbs.com/wordpress/?p=2569)
 - [Android RoboGuice 使用指南(18):Inject Resources](http://www.imobilebbs.com/wordpress/?p=2573)
-- [Android RoboGuice 使用指南(19):发送接收Events](http://www.imobilebbs.com/wordpress/?p=2577)
+- [Android RoboGuice 使用指南(19):发送接收 Events](http://www.imobilebbs.com/wordpress/?p=2577)
  

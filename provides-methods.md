@@ -3,7 +3,7 @@
 
 如果这个方法带有 [binding Annotation](http://www.imobilebbs.com/wordpress/?p=2510) 或是 @Named(“xxx”)，Guice 则将 @Provides 方法返回的对象绑定到这个 annotated 类型。
 
-例使用@Provides创建三个圆，然后再屏幕上显示出来，图形库的使用可以参见 [Android简明开发教程十二：引路蜂二维图形库简介及颜色示例 ](http://www.imobilebbs.com/wordpress/?p=930). 其实创建圆并不复杂，这里只是用来说明@Provides 方法的用法。
+例使用 @Provides 创建三个圆，然后再屏幕上显示出来，图形库的使用可以参见 [Android简明开发教程十二：引路蜂二维图形库简介及颜色示例 ](http://www.imobilebbs.com/wordpress/?p=930). 其实创建圆并不复杂，这里只是用来说明 @Provides 方法的用法。
 
 在 Graphics2DModule 在添加三个 @Provides 方法：
 
@@ -25,7 +25,7 @@ IShape provideCircle3(){
 
 ```
 
-分别绑定到IShape带有标注 @Named(“Circle1″)，@Named(“Circle2″)，@Named(“Circle3″).
+分别绑定到 IShape 带有标注 @Named(“Circle1″)，@Named(“Circle2″)，@Named(“Circle3″).
 
 创建 ProvidesMethodsDemo，有如下代码
 

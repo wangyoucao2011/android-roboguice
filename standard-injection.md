@@ -39,7 +39,7 @@ private @Inject
 SensorManager mSensorManager;
 ```
 
-去掉onCreate 中的
+去掉 onCreate 中的
 
 ```
 mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);

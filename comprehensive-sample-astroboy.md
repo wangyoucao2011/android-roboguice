@@ -1,4 +1,4 @@
-#綜合示例Astroboy
+#綜合示例 Astroboy
 
 前面介紹了 RogoGuice2.0 的基本用法，其它使用可以參見RoboGuice1.1 開發指南，2.0中提供了對 Fragment，View（自定義View 中使用注入）的支持，本博客不再一一介紹。
 

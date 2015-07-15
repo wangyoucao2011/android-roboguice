@@ -28,7 +28,7 @@ android:label=”@string/app_name”>
 </application>
 ```
 
-2.  在這個簡單的例子中，它使用的Layout 定義如下：
+2.  在這個簡單的例子中，它使用的 Layout 定義如下：
 
 ```
 
