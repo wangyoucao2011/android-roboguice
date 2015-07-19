@@ -24,7 +24,7 @@ Roboguice 自动为 sensorManager 注入所需 SensorManger 对象， Roboguice 
 - @Inject InputMethodManager inputMethodManager;
 - @Inject SensorManager sensorManager;
 
-我们使用 SensorManager 为例，说明一下 Standard Injection 的用法，本例基于 [Android ApiDemos示例解析(90):OS->Sensors](http://www.imobilebbs.com/wordpress/?p=1690) 。
+我们使用 SensorManager 为例，说明一下 Standard Injection 的用法，本例基于 [Android ApiDemos 示例解析(90):OS->Sensors](http://www.imobilebbs.com/wordpress/?p=1690) 。
 
 修改
 
@@ -46,7 +46,7 @@ mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 
 ```
 
-运行实例，可以看出不用使用 getSystemService，Roboguice 自动为mSensorManager 赋了值。
+运行实例，可以看出不用使用 getSystemService，Roboguice 自动为 mSensorManager 赋了值。
 
 ![](images/17.png)
 
