@@ -5,9 +5,9 @@ IShape, Rectangle, MyRectangle, MySquare, 有如下继承关系：
 
 ![](images/8.png)
 
-我们可能需要将 IShape 同时映射到 MyRectangle 和 MySquare ，这时可以使用 Binding [Annotation](http://download.oracle.com/javase/1.5.0/docs/guide/language/annotations.html) 来实现。 这时使用类型和annotation (标注）可以唯一确定一个 Binding。Type 和 [annotation](http://download.oracle.com/javase/tutorial/java/javaOO/annotations.html) 对称为 Key（键）。
+我们可能需要将 IShape 同时映射到 MyRectangle 和 MySquare ，这时可以使用 Binding [Annotation](http://download.oracle.com/javase/1.5.0/docs/guide/language/annotations.html) 来实现。 这时使用类型和 annotation (标注）可以唯一确定一个 Binding。Type 和 [annotation](http://download.oracle.com/javase/tutorial/java/javaOO/annotations.html) 对称为 Key（键）。
 
-为了同时使用 MyRectangle 和 MySequare，我们定义两个annotation，如下
+为了同时使用 MyRectangle 和 MySequare，我们定义两个 annotation，如下
 
 ```
 import com.google.inject.BindingAnnotation;
@@ -39,7 +39,7 @@ public @interface Square {
 
 + @BindingAnnotation 通知这是一个 Binding Annotation，如果将多个个标注应用到同一个元素时，Guice 会报错。
 + @Target({FIELD, PARAMETER, METHOD})  表示这个标注可以应用到类成员变量，函数的参数或时方法。
-+ @Retention(RUNTIME) 表示这个标注在程序运行时可以使用Reflection 读取。
++ @Retention(RUNTIME) 表示这个标注在程序运行时可以使用 Reflection 读取。
 
 创建一个 BindingAnnotationsDemo 用来绘制两个图形：
 
@@ -100,7 +100,7 @@ public class Graphics2DModule extends AbstractAndroidModule{
 
 ![](images/9.png)
 
-Inject 可以应用到 Field (成员变量）,Parameter (参数）或 Method(方法），前面的例子都是应用到 Field 上，如果应用到参数可以有如下形式：
+Inject 可以应用到 Field (成员变量）,Parameter (参数）或 Method (方法），前面的例子都是应用到 Field 上，如果应用到参数可以有如下形式：
 
 ```
 @Inject

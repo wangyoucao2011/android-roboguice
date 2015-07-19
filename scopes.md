@@ -34,4 +34,4 @@ TransactionLog provideTransactionLog() {
 
 ```
 
-如果某个类型使用某个你不想使用的 Scope 标记，可以将其绑定到Scopes.NO_SCOPE 取消这个 Scope 定义。
+如果某个类型使用某个你不想使用的 Scope 标记，可以将其绑定到 Scopes.NO_SCOPE 取消这个 Scope 定义。

@@ -1,6 +1,6 @@
 #綜合示例 Astroboy
 
-前面介紹了 RogoGuice2.0 的基本用法，其它使用可以參見RoboGuice1.1 開發指南，2.0中提供了對 Fragment，View（自定義View 中使用注入）的支持，本博客不再一一介紹。
+前面介紹了 RogoGuice2.0 的基本用法，其它使用可以參見 RoboGuice1.1 開發指南，2.0中提供了對 Fragment，View（自定義View 中使用注入）的支持，本博客不再一一介紹。
 
 本例使用的是 RoboGuice 開發包中的簡單示例 Astroboy (阿童木）。涉及的使用 RoboGuice2.0 的一些常用方法。
 

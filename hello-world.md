@@ -11,7 +11,7 @@
 
 ##使用roboguice 的步驟：
 
-1. 創建一個 RoboApplication 的子類 GuiceApplication，GuiceApplication 為 Appliacation 的子類，因此需要修改AndroidManifest.xml,將 Application 的 name 指向這個類。可以參見 [Android 簡明開發教程九：創建應用程序框架](http://www.imobilebbs.com/wordpress/?p=896)
+1. 創建一個 RoboApplication 的子類 GuiceApplication，GuiceApplication 為 Appliacation 的子類，因此需要修改 AndroidManifest.xml,將 Application 的 name 指向這個類。可以參見 [Android 簡明開發教程九：創建應用程序框架](http://www.imobilebbs.com/wordpress/?p=896)
 
 ```
 
@@ -74,13 +74,13 @@ public class GuiceDemo extends RoboActivity  {
 
 ```
 
-+ 使用 RoboGuice 的 Activity 需要從 RoboActivity 派生(RoboActivity 為 Activity 的子類).
++ 使用 RoboGuice 的 Activity 需要從 RoboActivity 派生 (RoboActivity 為 Activity 的子類).
 + 使用 @Inject 標註 greetingServce 依賴於 IGreetingService 服務
 + 使用 @InjectView 表示 helloLabel 依賴於 R.id.hello （XML）
 
-代碼中沒有創建 greetingServce 對象的代碼（如 new xxx()) 和為helloLabel 賦值的代碼。這些值都可以 Roboguice 自動創建和賦值注入（Inject) 到變數中。
+代碼中沒有創建 greetingServce 對象的代碼（如 new xxx()) 和為 helloLabel 賦值的代碼。這些值都可以 Roboguice 自動創建和賦值注入（Inject) 到變數中。
 
-為了說明問題，我們在代碼中添加兩個對 getGreetings 的實現，一個為HelloWorld, 一個為 HelloChina:
+為了說明問題，我們在代碼中添加兩個對 getGreetings 的實現，一個為 HelloWorld, 一個為 HelloChina:
 
 ```
 
@@ -104,8 +104,8 @@ public class HelloWorld implements IGreetingService{
 
 ```
 
-3. 到這裡，你可能有些困惑，RoboGuice 怎麼知道使用那個類（HelloWorld 或是 HelloChina）為 GuiceDemo 中的greetingServce 賦值呢？這是通過在 Module 中定義 binding 來實現的。
-
+3. 到這裡，你可能有些困惑，RoboGuice 怎麼知道使用那個類（HelloWorld 或是 HelloChina）為 GuiceDemo 中的 greetingServce 賦值呢？這是通過在 Module 中定義 binding 來實現的。
+ 
 項目中添加一個 GreetingModule （從 AbstractAndroidModule 派生）重載 configure 方法：
 
 ```

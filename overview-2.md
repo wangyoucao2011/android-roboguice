@@ -6,7 +6,7 @@ RoboGuice 最近推出了2.0版本。和1.1相比具有：
 - 支持 Fragment
 - 更简洁易用
 
-但由于 RoboGuice2 不完全向下兼容 RoboGuice1.1，因此原来使用RobuGuice1.1 开发的项目需要对代码做些修改才可以使用RoboGuice2.0.
+但由于 RoboGuice2 不完全向下兼容 RoboGuice1.1，因此原来使用 RobuGuice1.1 开发的项目需要对代码做些修改才可以使用 RoboGuice2.0.
 
 这里主要说明一下使用 Eclipse IDE 开发环境升级到 RoboGuice2.0 的一些升级注意事项：
 
@@ -18,7 +18,7 @@ RoboGuice 最近推出了2.0版本。和1.1相比具有：
 
 2. 原先1.1中的 RoboApplication 在2.0 已经不存在了。2.0使用上更方便，通常的应用如果不是有自定义绑定的话，无需再派生 Application。
 
-3. 如果你使用了自定义的 Module 来定义 Bindings，在2.0中可以通过XML 来定义，比如在 res/values/roboguice.xml 定义
+3. 如果你使用了自定义的 Module 来定义 Bindings，在2.0中可以通过 XML 来定义，比如在 res/values/roboguice.xml 定义
 
 ```
 <?xml version=”1.0″ encoding=”utf-8″?>
@@ -33,7 +33,7 @@ RoboGuice 最近推出了2.0版本。和1.1相比具有：
 
 ```
 
-4. 原先由 AbstractAndroidModule 派生的类，在2.0中改为AbstractModule ，如：
+4. 原先由 AbstractAndroidModule 派生的类，在2.0中改为 AbstractModule ，如：
 
 ```
 ublic class GreetingModule extends AbstractModule {
@@ -43,7 +43,7 @@ ublic class GreetingModule extends AbstractModule {
 }
 ```
 
-5. 修改 AndroidManifest.xml ，去除原来定义的 RoboApplication派生类定义，并在代码中去除 RoboApplication 派生类定义。
+5. 修改 AndroidManifest.xml ，去除原来定义的 RoboApplication 派生类定义，并在代码中去除 RoboApplication 派生类定义。
 
 以上是主要从 RoboGuice1.1 升级到2.0的主要步骤。在学习2.0之前，可以参考一下1.1的介绍，基本概念还是一样的。
 

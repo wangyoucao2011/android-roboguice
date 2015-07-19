@@ -20,7 +20,7 @@
 
 使用 roboguice2 的步骤：
 
-Roboguice2 中不在含有 RoboApplication 类，因此无需也不可能派生RoboApplication 的子类。这里重复一下 HelloWorld 的 Layout 和类说明
+Roboguice2 中不在含有 RoboApplication 类，因此无需也不可能派生 RoboApplication 的子类。这里重复一下 HelloWorld 的 Layout 和类说明
 
 1. 在这个简单的例子中，它使用的 Layout 定义如下：
 
@@ -67,11 +67,11 @@ public class GuiceDemo extends RoboActivity  {
 
 ```
 
-- 使用 RoboGuice 的 Activity 需要从 RoboActivity 派生(RoboActivity 为 Activity 的子类).
+- 使用 RoboGuice 的 Activity 需要从 RoboActivity 派生 (RoboActivity 为 Activity 的子类).
 - 使用 @Inject 标注 greetingServce 依赖于 IGreetingService 服务
 - 使用 @InjectView 表示 helloLabel 依赖于 R.id.hello （XML）
 
-代码中没有创建 greetingServce 对象的代码（如 new xxx()) 和为helloLabel 赋值的代码。这些值都可以 Roboguice 自动创建和赋值注入（Inject) 到变量中。
+代码中没有创建 greetingServce 对象的代码（如 new xxx()) 和为 helloLabel 赋值的代码。这些值都可以 Roboguice 自动创建和赋值注入（Inject) 到变量中。
 
 为了说明问题，我们在代码中添加两个对 getGreetings 的实现，一个为HelloWorld, 一个为 HelloChina:
 
@@ -96,9 +96,9 @@ public class HelloWorld implements IGreetingService{
 
 ```
 
-2. 到这里，你可能有些困惑，RoboGuice 怎么知道使用那个类（HelloWorld 或是 HelloChina）为 GuiceDemo 中的greetingServce 赋值呢？这是通过在 Module 中定义 binding 来实现的。
+2. 到这里，你可能有些困惑，RoboGuice 怎么知道使用那个类（HelloWorld 或是 HelloChina）为 GuiceDemo 中的 greetingServce 赋值呢？这是通过在 Module 中定义 binding 来实现的。
 
-在项目中添加一个 GreetingModule （从 AbstractModule 派生而非AbstractAndroidModule 类）重载 configure 方法：
+在项目中添加一个 GreetingModule （从 AbstractModule 派生而非 AbstractAndroidModule 类）重载 configure 方法：
 
 ```
 public class GreetingModule extends AbstractAndroidModule{
@@ -132,4 +132,4 @@ bind(IGreetingService.class).to(HelloWorld.class);
  
 ![](images/25.png)
 
-通过改变 binding ，GuiceDemo 显示了不同的结果，GuiceDemo 不依赖于具体的实现，可以非常方便的改变接口的实现而无需更改 GuiceDemo的代码。大大降低了类于类之间的耦合性。
+通过改变 binding ，GuiceDemo 显示了不同的结果，GuiceDemo 不依赖于具体的实现，可以非常方便的改变接口的实现而无需更改 GuiceDemo 的代码。大大降低了类于类之间的耦合性。

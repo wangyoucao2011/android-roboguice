@@ -1,12 +1,12 @@
 #Just-in-time Bindings
 
-Injector 通过检查 bindings 定义来创建某个类型的实例对象。定义在Module 中的绑定称为“明确声明绑定（Explicit bindings”。Injector 会首先使用带有 Explicit Bindings 为某个类型创建实例对象。 当但某个类型没有明确定义绑定时，Injector 试图构造“即时绑定 (Just-in-time Bindings),JIT Bindings 也成为隐含绑定 (implicit bindings).
+Injector 通过检查 bindings 定义来创建某个类型的实例对象。定义在 Module 中的绑定称为“明确声明绑定（Explicit bindings”。Injector 会首先使用带有 Explicit Bindings 为某个类型创建实例对象。 当但某个类型没有明确定义绑定时，Injector 试图构造“即时绑定 (Just-in-time Bindings),JIT Bindings 也成为隐含绑定 (implicit bindings).
 
 ##Eligible Constructor
 
 Injector 通过使用类的 injectable constructor 来创建该类的实例对象。injectable constructor 可以为该类定义的 public 不带参数的构造函数或是带有 @Injector 标记的构造函数。
 
-比如 [Android RoboGuice 使用指南(4):Linked Bindings](http://www.imobilebbs.com/wordpress/archives/2537?p=2503) 中MyRectangle 的无参数构造函数：
+比如 [Android RoboGuice 使用指南(4):Linked Bindings](http://www.imobilebbs.com/wordpress/archives/2537?p=2503) 中 MyRectangle 的无参数构造函数：
 
 ```
 public class MyRectangle extends Rectangle{

@@ -1,6 +1,6 @@
 #Untargetted Bindings
 
-在创建 Bindings 时，也可以不给出绑定的目标，通常用于含有@ImplementedBy 和 @ProvidedBy （后面介绍）的实类 (Concrete classes 或 type)。 Untargeted bindings 目的是通知 Injector 某个类类型，从而 Injector 可以预先准备某个依赖。Untargetted Bindings 不含 to 语句。
+在创建 Bindings 时，也可以不给出绑定的目标，通常用于含有 @ImplementedBy 和 @ProvidedBy （后面介绍）的实类 (Concrete classes 或 type)。 Untargeted bindings 目的是通知 Injector 某个类类型，从而 Injector 可以预先准备某个依赖。Untargetted Bindings 不含 to 语句。
 
 例如：
 

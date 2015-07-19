@@ -1,6 +1,6 @@
 #Inject 自定义 View
 
-前面介绍了 Android RoboGuice2 的 [HelloWorld 示例](http://www.imobilebbs.com/wordpress/?p=3111)，并介绍了从RoboGuice 1.1 升级到 RoboGuice2.0 的主要 [注意事项](http://www.imobilebbs.com/wordpress/?p=3100)。其它的基本概念和 RoboGuice1.1 基本一样，可以参见
+前面介绍了 Android RoboGuice2 的 [HelloWorld 示例](http://www.imobilebbs.com/wordpress/?p=3111)，并介绍了从 RoboGuice 1.1 升级到 RoboGuice2.0 的主要 [注意事项](http://www.imobilebbs.com/wordpress/?p=3100)。其它的基本概念和 RoboGuice1.1 基本一样，可以参见
 
 - Android RoboGuice 使用指南(3):Bindings 概述
 - Android RoboGuice 使用指南(4):Linked Bindings
@@ -20,7 +20,7 @@
 - Android RoboGuice 使用指南(18):Inject Resources
 - Android RoboGuice 使用指南(19):发送接收 Events
 
-本例介绍如何 Inject 自定义的 View，Inject 自定义的 View 和Android 自带的 View（如 TextView，Button）方法一样。
+本例介绍如何 Inject 自定义的 View，Inject 自定义的 View 和 Android 自带的 View（如 TextView，Button）方法一样。
 
 本例使用一个自定义的 TextView，每隔1秒显示当前时间。前定义如下：
 
@@ -147,12 +147,12 @@ public class GuiceDemo extends RoboActivity  {
 
 ```
 
-由于 GuiceDemo 是从 RoboActivity 派生的，在 onCreate 第一行的super.onCreate() 完成注入功能。如果你对 RoboGuice1.1 熟悉的话，在使用注入的变量前如 txtTime,需要执行 setContentView。
+由于 GuiceDemo 是从 RoboActivity 派生的，在 onCreate 第一行的 super.onCreate() 完成注入功能。如果你对 RoboGuice1.1 熟悉的话，在使用注入的变量前如 txtTime,需要执行 setContentView。
 在 RoboGuice2.0 中你可以使用同样的方法，2.0还提供了一个简单的标注方法 @ContentView ，如本例，为 Activity 设置 ContentView。
 
 ![](images/26.png)
 
 [本例下载](http://www.imobilebbs.com/download/android/RoboGuiceDemo1.zip) 。
 
-从本例可以看出，和 RoboGuice1.1 相比，RoboGuice2.0 在使用上要简洁的多。本例只需从 RoboActivity 派生，不在需要定义 Application等。
+从本例可以看出，和 RoboGuice1.1 相比，RoboGuice2.0 在使用上要简洁的多。本例只需从 RoboActivity 派生，不在需要定义 Application 等。
 

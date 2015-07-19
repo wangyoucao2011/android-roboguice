@@ -51,7 +51,7 @@ bind(Integer.class)
  .toInstance(120);
 ```
 
-运行这个例子，可以得到和前面例子同样的结果。此时使用 Injector 构造一个 MyRectangle 实例时，Injector 自动选用带参数的那个构造函数，使用100，120为 width 和 height 注入参数，返回一个MyRectangle 对象到需要引用的地方。
+运行这个例子，可以得到和前面例子同样的结果。此时使用 Injector 构造一个 MyRectangle 实例时，Injector 自动选用带参数的那个构造函数，使用100，120为 width 和 height 注入参数，返回一个 MyRectangle 对象到需要引用的地方。
 
 尽管可以使用 Instance Bindings 将一个类型映射到一个复杂类型的类实例，但 RoboGuice 不建议将 Instance Bindings 应用到复杂类型的实例，因为这样会使应用程序启动变慢。
 

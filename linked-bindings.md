@@ -21,7 +21,7 @@ public class Graphics2DModule extends AbstractAndroidModule{
 
 ```
 
-此时，如果使用 injector.getInstance(IShape.class) 或是injector 碰到依赖于 IShape 地方时,它将使用 MyRectangle。可以将类型映射到它任意子类或是实现了该类型接口的所有类。也可以将一个实类（非接口）映射到其子类，如
+此时，如果使用 injector.getInstance(IShape.class) 或是 injector 碰到依赖于 IShape 地方时,它将使用 MyRectangle。可以将类型映射到它任意子类或是实现了该类型接口的所有类。也可以将一个实类（非接口）映射到其子类，如
 
 bind(MyRectangle.class).to(MySquare.class);
 

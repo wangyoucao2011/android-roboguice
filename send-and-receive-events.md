@@ -1,6 +1,6 @@
 #發送接收 Events
 
-Roboguice 提供了對 Context 生命周期相關的事件的 send 和receive ,系統預設支持的事件為：
+Roboguice 提供了對 Context 生命周期相關的事件的 send 和 receive ,系統預設支持的事件為：
 
 - OnActivityResultEvent
 - OnConfigurationChangedEvent
@@ -68,7 +68,7 @@ class MyListeners {
 有關 Events 的注意事項如下：
 
 - 在 Context 中使用 @Inject 定義事件的 Listener.
-- Event 只能在某一特定的 Context（Activity）中傳送，不能跨Context 發送，接受。
+- Event 只能在某一特定的 Context（Activity）中傳送，不能跨 Context 發送，接受。
 - Event 除了提供上面列出的 Context 相關事件外，也可以使用自定義的事件。
 - @observes 只能應用到方法上，而不能應用到構造函數上。
 

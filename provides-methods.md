@@ -1,5 +1,5 @@
 #@Provides Methods
-上例说过如果需要构造一些较复杂的类的实例，通常的方法是使用@Provides 方法。这个方法必须定义在模块中 (Module)，而且必须使用@Provides 标注，在个方法的返回类型则绑定到这个方法返回的对象实例。
+上例说过如果需要构造一些较复杂的类的实例，通常的方法是使用 @Provides 方法。这个方法必须定义在模块中 (Module)，而且必须使用 @Provides 标注，在个方法的返回类型则绑定到这个方法返回的对象实例。
 
 如果这个方法带有 [binding Annotation](http://www.imobilebbs.com/wordpress/?p=2510) 或是 @Named(“xxx”)，Guice 则将 @Provides 方法返回的对象绑定到这个 annotated 类型。
 
